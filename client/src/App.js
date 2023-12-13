@@ -1,0 +1,24 @@
+import './App.css';
+
+// ! COMPONENTES
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
+import Footer from './Components/Footer/Footer';
+
+// ! LIBRERIAS
+import { Routes, Route } from "react-router-dom";
+
+
+function App() {
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer/>
+    </div>
+  );
+}
+
+export default App;
