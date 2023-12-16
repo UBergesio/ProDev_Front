@@ -4,10 +4,9 @@ const Home = () => {
   return (
     <div>
       <Link to="/about">
-        <button> hola delfi</button>
+        <button className="bg-cyan-700"> hola delfi</button>
       </Link>
     </div>
   );
 };
-
 export default Home;
